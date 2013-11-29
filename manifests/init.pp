@@ -47,9 +47,10 @@ define archive (
   $extension      = 'tar.gz',
   $src_target     = '/usr/src',
   $allow_insecure = false,
-  $username = undef,
-  $password = undef,
-  $proxy          = undef ){
+  $username       = undef,
+  $password       = undef,
+  $proxy          = undef
+  ){
 
   archive::download {"${name}.${extension}":
     ensure         => $ensure,

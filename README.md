@@ -19,6 +19,22 @@ Supported archive types are:
 Usage
 -----
 
+###Archive
+
+**url** - URL to download the archive from
+**target** - Destination directory to download package into
+**checksum** - Whether or not to check the downloaded package signature. Default: True
+**digest_url** - Where to download the archive signature from. Default: ""
+**digest_type** - What type of checksum process to run. Default: md5
+**src_target** - Default: /usr/src
+**root_dir** - Default: ""
+**extension** - What extension the archive file has. Default: .tar.gz
+**timeout** - How long in seconds to wait before timing out. Default: 120
+**allow_insecure** - Default: false
+**username** - Basic auth username
+**password** - Basic auth password
+**proxy** - HTTP proxy in the form of 'hostname:port', e.g. 'myproxy:8080'
+
 Example:
 
     archive { 'apache-tomcat-6.0.26':
